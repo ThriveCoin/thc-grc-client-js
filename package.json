@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "standard",
     "format": "standard --fix",
+    "prepare": "husky install",
     "test": "npm run lint"
   },
   "repository": {
