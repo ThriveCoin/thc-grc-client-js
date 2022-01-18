@@ -13,6 +13,9 @@ const main = async () => {
 
   const timeRes = await client.request('rest:sample:wrk', 'getTime', [])
   console.log('time result', timeRes)
+
+  const timeResAll = await client.requestAll('rest:sample:wrk', 'getTime', [])
+  console.log('time result on all', timeResAll)
 }
 
 main().catch(console.error)
