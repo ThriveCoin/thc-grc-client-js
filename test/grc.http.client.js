@@ -11,18 +11,6 @@ class SampleWrk extends GrcHttpWrk {
   ping (from, message) {
     return { to: from, message }
   }
-
-  getTime () {
-    return 1665843499038
-  }
-
-  calc () {
-    throw new Error('SIMULATE')
-  }
-
-  _privCalc () {
-    return 33
-  }
 }
 
 describe('grc.http.client.js', () => {
